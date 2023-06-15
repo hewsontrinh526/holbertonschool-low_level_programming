@@ -8,3 +8,5 @@ C - Hello, World
 
 3. Name - This script will compile a file and create an executable named cisfun.
 
+4. Hello, puts - This C program will print the included string followed by a new line.
+
