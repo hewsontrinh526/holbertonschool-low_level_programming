@@ -1,0 +1,1 @@
+This is my introduction into low-level programming. The first language I am discovering and learning is C. 
