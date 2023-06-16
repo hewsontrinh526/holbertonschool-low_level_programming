@@ -12,3 +12,4 @@ C - Hello, World
 
 5. Hello, printf - This C program will print the included string followed by a new line.
 
+6. Size is not grandeur, and territory does not make a nation - This C program will print the size of various types on the computer it is complied and run on, e.g. 32-bit and 64-bit computers.
