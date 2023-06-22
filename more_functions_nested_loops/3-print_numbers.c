@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - Multiplies two digits together.
+ * print_numbers - Prints all the numbers from 0 and 9.
  *
  *
  * Return: Always 0.
