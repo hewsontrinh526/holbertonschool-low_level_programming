@@ -8,14 +8,13 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-.PHONY: clean
-.PHONY: oclean
-.PHONY: fclean
+
 clean:
-	$(RM) *~ school
+	$(RM) *~ $(NAME)
+
 oclean:
-	$(RM)  main.o school.o
-fclean:
-	$(RM) *~ school
-	$(RM) -f main.o school.o
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
 re: fclean all
