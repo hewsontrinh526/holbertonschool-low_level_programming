@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - Prints the numbers from 0 to 9 except for 2 and 4.
+ * print_line - Writing a function that draws a straight line in the terminal.
  *
  * @n: int input from user
  *
