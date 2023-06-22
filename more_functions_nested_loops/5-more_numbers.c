@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - Prints the numbers from 0 to 9 except for 2 and 4..
+ * more_numbers - Prints the numbers from 0 to 14, 10 times.
  *
  *
  * Return: Always 0.
