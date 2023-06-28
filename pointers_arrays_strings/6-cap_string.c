@@ -9,24 +9,24 @@
  */
 char *cap_string(char *s)
 {
-        int i;
+	int i;
 
-        i = 0;
-        while (s[i] != '\0')
-        {
+	i = 0;
+	while (s[i] != '\0')
+	{
 		if (i == 0)
-                {
-                        if ((s[i] >= 'a') && (s[i] >= 'z'))
+		{
+			if ((s[i] >= 'a') && (s[i] >= 'z'))
 			{
 				s[i] = s[i] - 32;
 			}
-                }
+		}
 		else if ((s[i] == ' ')
 			 || (s[i] == '\n')
 			 || (s[i] == '\t')
 			 || (s[i] == '.'))
 		{
-			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			if ((s[i + 1] >= 'a') && (s[i + 1] <= 'z'))
 			{
 				s[i + 1] = s[i + 1] - 32;
 			}
