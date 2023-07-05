@@ -11,3 +11,9 @@ This is my introduction into low-level programming. The first language I am disc
 4. [C - More function, more nested loops](https://github.com/hewsontrinh526/holbertonschool-low_level_programming/tree/master/more_functions_nested_loops)
 
 5. [C - Pointers, arrays and strings](https://github.com/hewsontrinh526/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings)
+
+6. [C - Recursion](https://github.com/hewsontrinh526/holbertonschool-low_level_programming/tree/master/recursion)
+
+7. [C - Static Libraries](https://github.com/hewsontrinh526/holbertonschool-low_level_programming/tree/master/static_libraries)
+
+8. [C - argc, argv](https://github.com/hewsontrinh526/holbertonschool-low_level_programming/tree/master/argc_argv)
