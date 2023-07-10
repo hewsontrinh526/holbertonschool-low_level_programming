@@ -31,10 +31,13 @@ char *_strdup(char *str)
 
 	while (str[i] != '\0')
 	{
+		if (dup == NULL)
+		{
+			return (NULL);
+		}
 		dup[i] = str[i];
 		i = i + 1;
 	}
 	dup[i] = '\0';
 	return (dup);
-	free(dup);
 }
