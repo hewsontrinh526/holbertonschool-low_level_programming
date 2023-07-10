@@ -14,6 +14,7 @@
 int *array_range(int min, int max)
 {
 	int i;
+	int j;
 	int *array;
 
 	if (min > max)
@@ -28,12 +29,13 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	i = 0;
+	i = min;
+	j = 0;
 
-	while (min <= max)
+	while (i <= max)
 	{
-		array[i] = min;
-		min = min + 1;
+		array[j] = i;
+		j = j + 1;
 		i = i + 1;
 	}
 	return (array);
