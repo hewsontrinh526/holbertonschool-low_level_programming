@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i;
 	unsigned int j;
 	int k;
-	int s2_len;
+	unsigned int s2_len;
 	char *concat;
 
 	if (s1 == NULL)
