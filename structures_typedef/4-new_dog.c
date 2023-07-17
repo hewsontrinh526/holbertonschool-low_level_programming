@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include "dog.h"
-
-#include "main.h"
 #include <stdlib.h>
 
 /**
