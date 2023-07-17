@@ -5,6 +5,7 @@
 /**
  * print_name - Prints name
  *
+ * @f: Pointer to function
  * @name: input name
  *
  * Return: Returns name
