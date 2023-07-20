@@ -36,16 +36,13 @@ int main(int argc, char *argv[])
 	}
 	while (i < byt)
 	{
-		printf("%02x ", prntz_op[i] & 0xFF);
+		printf("%02x", prntz_op[i] & 0xFF);
 		if (i < byt - 1)
 		{
 			printf(" ");
 		}
-		else
-		{
-			printf("\n");
-		}
 		i = i + 1;
 	}
+	printf("\n");
 	return (0);
 }
