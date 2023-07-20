@@ -1,15 +1,17 @@
 section .text
 global main
 main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, 13
+	;; Write "Hello, World" to standard output
+	mov rax, 1 		; System call number for sys_write
+	mov rdi, 1		; File description 1 (standard output)
+	mov rsi, msg		; Pointer to the string to print
+	mov rdx, 13		; Length of string, including null-terminator
 	syscall
 
-	mov rax, 60
-	mov rdi, 0
+	;; Exit the program
+	mov rax, 60		; System call number for sys_exit
+	mov rdi, 0		; Exit status code 0
 	syscall
 
-section .rodata
+section .data
 msg db "Hello, World",10
