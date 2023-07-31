@@ -15,7 +15,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *NewStart;
 
-	if (head != NULL && n != '\0')
+	if (head != NULL)
 	{
 		NewStart = malloc(sizeof(*NewStart));
 		if (NewStart == NULL)
