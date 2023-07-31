@@ -4,10 +4,10 @@
 #include "lists.h"
 
 /**
- * add_node - Adds a new node at the beginning of a linked list
+ * add_dnodeint - Adds a new node at the beginning of a doubly linked list
  *
  * @head: Head of the list
- * @str: Input string
+ * @n: Input integer
  *
  * Return: The address of the new element, else NULL if failed
  */
@@ -25,6 +25,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		NewStart->n = n;
 		NewStart->next = *head;
 		NewStart->prev = NULL;
+		if (*head != NULL)
+		{
+			*head->prev = NewStart;
+		}
 		*head = NewStart;
 		return (NewStart);
 	}
