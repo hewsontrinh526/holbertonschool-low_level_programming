@@ -5,7 +5,7 @@
 
 /**
 * get_dnodeint_at_index - Returns the nth node of a doubly linked list
-
+*
 * @head: Head of the list
 * @index: Node to be returned
 *
