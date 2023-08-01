@@ -14,13 +14,10 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *current; /* pointer to hold next and prev ptrs in node */
+	dlistint_t *current = *h;
 	dlistint_t *previous;
 	dlistint_t *NewNode;
-	unsigned int i;
-
-	current = *h;
-	i = 0;
+	unsigned int i = 0;
 
 	if (h == NULL)
 	{
@@ -40,7 +37,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		i = i + 1;
 	}
 	previous = current->next;
-       	if (current->next == NULL)
+	if (current->next == NULL)
 	{
 		return (add_dnodeint_end(h, n));
 	}
