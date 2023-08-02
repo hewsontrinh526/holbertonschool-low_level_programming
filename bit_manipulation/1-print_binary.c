@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * binary_to_uint - Changing a long unsigned int to binary
+ * print_binary - Changing a long unsigned int to binary
  *
  * @n: Number to be converted
  *
