@@ -12,24 +12,14 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i; /* Value of bit */
-	unsigned int bit_count; /* Uint of bits in n */
-	unsigned long int bit_num; /* Temp Ulong to hold n */
+	unsigned int bit;
 
-	bit_count = 0;
-	bit_num = n;
 
-	while (bit_num != 0)
-	{
-		bit_count = bit_count + 1;
-		bit_num >>= 1;
-	}
-	if (index > n || index > bit_count)
+	if (index > (sizeof(n) * 8))
 	{
 		return (-1);
 	}
+	bit = (n >> index) & 1;
 
-	i = (n >> index) & 1;
-
-	return (i);
+	return (bit);
 }
