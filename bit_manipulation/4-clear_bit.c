@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * set_bit - Set a value of a bit to 1
+ * clear_bit - Sets a value of a bit to 0 at a given index
  *
  * @n: Input number
  * @index: Bit position
@@ -20,6 +20,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	{
 		return (-1);
 	}
-	*n = *n & ~ (i << index);
+	*n = *n & ~(i << index);
 	return (1);
 }
