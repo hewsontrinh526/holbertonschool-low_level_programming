@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "main.h"
 
 /**
@@ -12,8 +13,18 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int i; /* Value of bit */
+	unsigned int bit_count; /* Uint of bits in n */
+	unsigned long int bit_num; /* Temp Ulong to hold n */
 
-	if (index > n)
+	bit_count = 0;
+	bit_num = n;
+
+	while (bit_num != 0)
+	{
+		bit_count = bit_count + 1;
+		bit_num >>= 1;
+	}
+	if (index > n || index > bit_count)
 	{
 		return (-1);
 	}
