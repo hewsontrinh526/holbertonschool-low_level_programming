@@ -11,7 +11,7 @@
 |`~`| **NOT** Operator. Takes a bit and switches to what it is not. 1's would be 0 and 0's would be 1's.|
 |`<<` & `>>`|**LEFT** and **RIGHT** Shift Operators. Shifts the bits either left or right by the number of positions specificed after the operator.|
 
-###The following projects demostrates these bitwise operators and their full functionality.
+### The following projects demostrates these bitwise operators and their full functionality.
 
 ## 0. <a href="https://github.com/hewsontrinh526/holbertonschool-low_level_programming/blob/master/bit_manipulation/0-binary_to_uint.c">0</a>
 
