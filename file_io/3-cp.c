@@ -24,7 +24,7 @@ ssize_t readfd(int fd_from, char *buf, int size, char *file_name)
 	if (file_read == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from");
-		dprintf(STDERR_FILENO, "file %s\n", file_name);
+		dprintf(STDERR_FILENO, " file %s\n", file_name);
 		exit(98);
 	}
 	return (file_read);
@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 	if (fd_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from");
-		dprintf(STDERR_FILENO, "file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, " file %s\n", argv[1]);
 		exit(98);
 	}
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 		if (file_written == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write");
-			dprintf(STDERR_FILENO, "to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, " to %s\n", argv[2]);
 			exit(99);
 		}
 		file_read = readfd(fd_from, buf, sizeof(buf), argv[1]);
