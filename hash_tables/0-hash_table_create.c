@@ -5,7 +5,7 @@
 #include <string.h>
 
 /**
- * hash_table_create - Creates a hash table
+ * hash_table_create - Creates a hash table.
  *
  * @size: Size of the array
  *
