@@ -9,13 +9,13 @@
  * read_textfile - Reads a text file and prints it to the POSIX standard output
  *
  * @filename: Name of the text fle
- * @letter: Number of letters in text file
+ * @letters: Number of letters in text file
  *
  * Return: Actual numer of letters it can read and print, else 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-        ssize_t file_read;
+	ssize_t file_read;
 	ssize_t file_written;
 	int fd;
 	char buf[10001];
