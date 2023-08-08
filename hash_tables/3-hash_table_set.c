@@ -37,7 +37,7 @@ hash_node_t *add_node(const char *key, const char *value)
 	{
 		free(new_node->key);
 		free(new_node);
-		return (0);
+		return (NULL);
 	}
 	return (new_node);
 }
@@ -68,7 +68,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
-	while (ht->array[i] != NULL)
+	if (ht->array[i] != NULL)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
