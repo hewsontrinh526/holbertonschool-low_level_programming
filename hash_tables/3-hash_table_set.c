@@ -62,19 +62,24 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	i = key_index((const unsigned char *)key, ht->size);
+	new_element = ht->array[i];
+
+	while (new_element != NULL)
+	{
+		if (strcmp(new_element->key, key) == 0)
+		{
+			free(new_element->value);
+			new_element->value = strdup(value);
+			return (1);
+		}
+		new_element = new_element->next;
+	}
+
 	new_element = add_node(key, value);
 
 	if (new_element == NULL)
 	{
 		return (0);
-	}
-	if (ht->array[i] != NULL)
-	{
-		if (strcmp(ht->array[i]->key, key) == 0)
-		{
-			ht->array[i]->value = (char *)value;
-			return (1);
-		}
 	}
 	new_element->next = ht->array[i];
 	ht->array[i] = new_element;
