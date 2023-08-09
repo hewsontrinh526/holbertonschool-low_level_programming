@@ -1,8 +1,8 @@
 <h1>C - Hash Tables</h1>
 ### Hash tables are a data structure that implements an array; it is an abstract data type that maps keys to value. To map the keys to the value, a hash function is used to map data of arbitrary size to a fixed-size values.
 ### The following code block is a given data structure for this project.
-```
-/**
+
+`/**
  * struct hash_node_s - Node of a hash table
  *
  * @key: The key, string
@@ -28,8 +28,8 @@ typedef struct hash_table_s
 {
      unsigned long int size;
      hash_node_t **array;
-} hash_table_t;
-```
+} hash_table_t;`
+
 ### The following projects demonstrates the implementation of a hash table in C.
 ## 0. <a href="https://github.com/hewsontrinh526/holbertonschool-low_level_programming/blob/master/hash_tables/0-hash_table_create.c">>>> ht = {}</a>
 
