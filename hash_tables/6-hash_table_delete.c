@@ -33,6 +33,8 @@ void hash_table_delete(hash_table_t *ht)
 		{
 			temp = current;
 			current = current->next;
+			free(temp->value);
+			free(temp->key);
 			free(temp);
 		}
 		i = i + 1;
