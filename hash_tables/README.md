@@ -1,5 +1,7 @@
 <h1>C - Hash Tables</h1>
+
 ### Hash tables are a data structure that implements an array; it is an abstract data type that maps keys to value. To map the keys to the value, a hash function is used to map data of arbitrary size to a fixed-size values.
+
 ### The following code block is a given data structure for this project.
 
 ```
